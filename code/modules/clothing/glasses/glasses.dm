@@ -709,6 +709,71 @@
 	inactive_icon_state = "polarizedorange"
 	prescription = TRUE
 
+/obj/item/clothing/glasses/mgoggles/tan
+	name = "tan tinted marine ballistic goggles"
+	desc = "Standard issue tan-tinted USCM goggles. While commonly found mounted atop M10 pattern helmets, they are also capable of preventing insects, dust, and other things from getting into one's eyes. This one has tan tinted lenses."
+	icon_state = "mgogglest"
+	active_icon_state = "mgogglest_down"
+	inactive_icon_state = "mgogglest"
+
+/obj/item/clothing/glasses/mgoggles/green
+	name = "green tinted marine ballistic goggles"
+	desc = "Standard issue green-tinted USCM goggles. While commonly found mounted atop M10 pattern helmets, they are also capable of preventing insects, dust, and other things from getting into one's eyes. This one has green tinted lenses."
+	icon_state = "mgogglesg"
+	active_icon_state = "mgogglesg_down"
+	inactive_icon_state = "mgogglesg"
+
+/obj/item/clothing/glasses/mgoggles/blue2
+	name = "blue tinted marine ballistic goggles variant"
+	desc = "Standard issue blue-tinted USCM goggles with an alternate blue tint."
+	icon_state = "mgogglesb"
+	active_icon_state = "mgogglesb_down"
+	inactive_icon_state = "mgogglesb"
+
+/obj/item/clothing/glasses/mgoggles/black
+	name = "black tinted marine ballistic goggles"
+	desc = "Standard issue black-tinted USCM goggles. While commonly found mounted atop M10 pattern helmets, they are also capable of preventing insects, dust, and other things from getting into one's eyes. This one has black tinted lenses."
+	icon_state = "mgogglesd"
+	active_icon_state = "mgogglesd_down"
+	inactive_icon_state = "mgogglesd"
+
+/obj/item/clothing/glasses/mgoggles/red2
+	name = "red tinted marine ballistic goggles"
+	desc = "Special night adaptation USCM goggles. This one has red tinted lenses to aid dark-to-light transition. Did not work as intended in the field."
+	icon_state = "mgogglesr"
+	active_icon_state = "mgogglesr_down"
+	inactive_icon_state = "mgogglesr"
+
+/obj/item/clothing/glasses/sunglasses/aviator/tan
+	name = "aviator shades, tan tinted"
+	desc = "Tan framed aviator sunglasses. You feel like a true pilot wearing these."
+	icon_state = "aviatortan"
+	item_state = "aviatortan"
+
+/obj/item/clothing/glasses/sunglasses/aviator/black
+	name = "aviator shades, black tinted"
+	desc = "Black framed aviator sunglasses."
+	icon_state = "aviatorblack"
+	item_state = "aviatorblack"
+
+/obj/item/clothing/glasses/sunglasses/aviator/blue
+	name = "aviator shades, blue tinted"
+	desc = "Blue tinted aviator sunglasses. You feel like a true pilot wearing these."
+	icon_state = "aviatorblue"
+	item_state = "aviatorblue"
+
+/obj/item/clothing/glasses/sunglasses/aviator/green
+	name = "aviator shades, green tinted"
+	desc = "Green tinted aviator sunglasses. You feel like a true pilot wearing these."
+	icon_state = "aviatorgreen"
+	item_state = "aviatorgreen"
+
+/obj/item/clothing/glasses/sunglasses/aviator/red
+	name = "aviator shades, red tinted"
+	desc = "Red tinted aviator sunglasses. You feel like a true pilot wearing these."
+	icon_state = "aviatorred"
+	item_state = "aviatorred"
+
 /obj/item/clothing/glasses/mgoggles/on_enter_storage(obj/item/storage/internal/S)
 	..()
 

@@ -140,6 +140,26 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 	display_name = "Polarized Ballistic goggles, M1A1 orange"
 	path = /obj/item/clothing/glasses/mgoggles/v2/polarized_orange
 
+/datum/gear/eyewear/goggles_tan
+	display_name = "Ballistic goggles, tan tinted"
+	path = /obj/item/clothing/glasses/mgoggles/tan
+
+/datum/gear/eyewear/goggles_green
+	display_name = "Ballistic goggles, green tinted"
+	path = /obj/item/clothing/glasses/mgoggles/green
+
+/datum/gear/eyewear/goggles_blue2
+	display_name = "Ballistic goggles, blue tinted"
+	path = /obj/item/clothing/glasses/mgoggles/blue2
+
+/datum/gear/eyewear/goggles_black
+	display_name = "Ballistic goggles, black tinted"
+	path = /obj/item/clothing/glasses/mgoggles/black
+
+/datum/gear/eyewear/goggles_red2
+	display_name = "Ballistic goggles, red tinted"
+	path = /obj/item/clothing/glasses/mgoggles/red2
+
 /datum/gear/eyewear/eyepatch
 	display_name = "Eyepatch, black"
 	path = /obj/item/clothing/glasses/eyepatch
@@ -172,6 +192,26 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 /datum/gear/eyewear/aviators/silver
 	display_name = "Aviator shades, silver"
 	path = /obj/item/clothing/glasses/sunglasses/aviator/silver
+
+/datum/gear/eyewear/aviators_tan
+	display_name = "Aviator shades, tan clear lense"
+	path = /obj/item/clothing/glasses/sunglasses/aviator/tan
+
+/datum/gear/eyewear/aviators_black
+	display_name = "Aviator shades, black tinted lense"
+	path = /obj/item/clothing/glasses/sunglasses/aviator/black
+
+/datum/gear/eyewear/aviators_blue
+	display_name = "Aviator shades, blue tinted lense"
+	path = /obj/item/clothing/glasses/sunglasses/aviator/blue
+
+/datum/gear/eyewear/aviators_green
+	display_name = "Aviator shades, green tinted lense"
+	path = /obj/item/clothing/glasses/sunglasses/aviator/green
+
+/datum/gear/eyewear/aviators_red
+	display_name = "Aviator shades, red tinted lense"
+	path = /obj/item/clothing/glasses/sunglasses/aviator/red
 
 /datum/gear/eyewear/new_bimex/black
 	display_name = "BiMex tactical shades, black"
