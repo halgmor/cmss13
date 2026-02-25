@@ -565,7 +565,6 @@ GLOBAL_LIST_INIT(allowed_hat_items, list(
 
 /obj/item/clothing/head/cmcap/boonie/tan
 	icon_state = "booniehattan"
-	flags_atom = FPRINT|NO_GAMEMODE_SKIN
 
 /obj/item/clothing/head/cmcap/boonie/fisherman
 	name = "\improper fisherman's boonie hat"
@@ -576,6 +575,11 @@ GLOBAL_LIST_INIT(allowed_hat_items, list(
 	item_icons = list(
 		WEAR_HEAD = 'icons/mob/humans/onmob/clothing/head/hats.dmi'
 	)
+
+/obj/item/clothing/head/cmcap/buckethat
+	name = "USCM bucket hat"
+	desc = "A bucket hat issued to USCM personnel for diverse use. Provides sun and rain protection."
+	icon_state = "buckethat"
 
 /obj/item/clothing/head/cmcap/co
 	name = "\improper USCM Commanding officer cap"
