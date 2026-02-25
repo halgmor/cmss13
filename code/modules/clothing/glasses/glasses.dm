@@ -276,12 +276,12 @@
 	desc = "Such a dapper eyepiece!"
 	icon = 'icons/obj/items/clothing/glasses/misc.dmi'
 	icon_state = "monocle"
-	item_state = "headset" // lol
+	item_state = "monocle" // lol
 	item_icons = list(
 		WEAR_EYES = 'icons/mob/humans/onmob/clothing/glasses/misc.dmi',
 		WEAR_FACE = 'icons/mob/humans/onmob/clothing/glasses/misc.dmi',
-		WEAR_L_HAND = 'icons/mob/humans/onmob/inhands/equipment/devices_lefthand.dmi',
-		WEAR_R_HAND = 'icons/mob/humans/onmob/inhands/equipment/devices_righthand.dmi',
+		WEAR_L_HAND = 'icons/mob/humans/onmob/inhands/clothing/glasses_lefthand.dmi',
+		WEAR_R_HAND = 'icons/mob/humans/onmob/inhands/clothing/glasses_righthand.dmi',
 	)
 	flags_armor_protection = 0
 	flags_equip_slot = SLOT_EYES|SLOT_FACE
@@ -730,8 +730,8 @@
 	active_icon_state = "mgogglesb_down"
 	inactive_icon_state = "mgogglesb"
 
-/obj/item/clothing/glasses/mgoggles/black
-	name = "black tinted marine ballistic goggles"
+/obj/item/clothing/glasses/mgoggles/dark
+	name = "dark tinted marine ballistic goggles"
 	desc = "Standard issue black-tinted USCM goggles. While commonly found mounted atop M10 pattern helmets, they are also capable of preventing insects, dust, and other things from getting into one's eyes. This one has black tinted lenses."
 	icon_state = "mgogglesd"
 	active_icon_state = "mgogglesd_down"
@@ -744,15 +744,15 @@
 	active_icon_state = "mgogglesr_down"
 	inactive_icon_state = "mgogglesr"
 
-/obj/item/clothing/glasses/sunglasses/aviator/tan
-	name = "aviator shades, tan tinted"
-	desc = "Tan framed aviator sunglasses. You feel like a true pilot wearing these."
-	icon_state = "aviatortan"
-	item_state = "aviatortan"
+/obj/item/clothing/glasses/sunglasses/aviator/brown
+	name = "aviator shades, brown tinted"
+	desc = "Brown tinted aviator sunglasses. You feel like a true pilot wearing these."
+	icon_state = "aviatorbrown"
+	item_state = "aviatorbrown"
 
 /obj/item/clothing/glasses/sunglasses/aviator/black
 	name = "aviator shades, black tinted"
-	desc = "Black framed aviator sunglasses."
+	desc = "Black tinted aviator sunglasses. You feel like a true pilot wearing these."
 	icon_state = "aviatorblack"
 	item_state = "aviatorblack"
 
@@ -767,6 +767,12 @@
 	desc = "Green tinted aviator sunglasses. You feel like a true pilot wearing these."
 	icon_state = "aviatorgreen"
 	item_state = "aviatorgreen"
+
+/obj/item/clothing/glasses/sunglasses/aviator/purple
+	name = "aviator shades, purple tinted"
+	desc = "Purple tinted aviator sunglasses. You feel like a true pilot wearing these."
+	icon_state = "aviatorpurple"
+	item_state = "aviatorpurple"
 
 /obj/item/clothing/glasses/sunglasses/aviator/red
 	name = "aviator shades, red tinted"

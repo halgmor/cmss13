@@ -152,9 +152,9 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 	display_name = "Ballistic goggles, blue tinted"
 	path = /obj/item/clothing/glasses/mgoggles/blue2
 
-/datum/gear/eyewear/goggles_black
-	display_name = "Ballistic goggles, black tinted"
-	path = /obj/item/clothing/glasses/mgoggles/black
+/datum/gear/eyewear/goggles_dark
+	display_name = "Ballistic goggles, dark tinted"
+	path = /obj/item/clothing/glasses/mgoggles/dark
 
 /datum/gear/eyewear/goggles_red2
 	display_name = "Ballistic goggles, red tinted"
@@ -193,12 +193,12 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 	display_name = "Aviator shades, silver"
 	path = /obj/item/clothing/glasses/sunglasses/aviator/silver
 
-/datum/gear/eyewear/aviators_tan
-	display_name = "Aviator shades, tan clear lense"
-	path = /obj/item/clothing/glasses/sunglasses/aviator/tan
+/datum/gear/eyewear/aviators_brown
+	display_name = "Aviator shades, brown tinted lense"
+	path = /obj/item/clothing/glasses/sunglasses/aviator/brown
 
 /datum/gear/eyewear/aviators_black
-	display_name = "Aviator shades, black tinted lense"
+	display_name = "Aviator shades, dark tinted lense"
 	path = /obj/item/clothing/glasses/sunglasses/aviator/black
 
 /datum/gear/eyewear/aviators_blue
@@ -208,6 +208,10 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 /datum/gear/eyewear/aviators_green
 	display_name = "Aviator shades, green tinted lense"
 	path = /obj/item/clothing/glasses/sunglasses/aviator/green
+
+/datum/gear/eyewear/aviators_purple
+	display_name = "Aviator shades, purple tinted lense"
+	path = /obj/item/clothing/glasses/sunglasses/aviator/purple
 
 /datum/gear/eyewear/aviators_red
 	display_name = "Aviator shades, red tinted lense"
@@ -235,6 +239,11 @@ GLOBAL_LIST_EMPTY(roles_with_gear)
 /datum/gear/eyewear/sunglasses
 	display_name = "Sunglasses"
 	path = /obj/item/clothing/glasses/sunglasses
+
+/datum/gear/eyewear/monocle
+	display_name = "Monocle"
+	path = /obj/item/clothing/glasses/monocle
+	fluff_cost = 2
 
 /datum/gear/mask
 	category = "Masks and scarves"
