@@ -566,6 +566,14 @@ GLOBAL_LIST_INIT(allowed_hat_items, list(
 /obj/item/clothing/head/cmcap/boonie/tan
 	icon_state = "booniehattan"
 
+/obj/item/clothing/head/cmcap/boonie/classic
+	name = "\improper USCM classic boonie hat"
+	desc = "The classic floppy bush hat. Protects only from the sun and rain, but very comfortable."
+	icon_state = "classicbooniehat"
+
+/obj/item/clothing/head/cmcap/boonie/classic/tan
+	icon_state = "classicbooniehattan"
+
 /obj/item/clothing/head/cmcap/boonie/fisherman
 	name = "\improper fisherman's boonie hat"
 	desc = "A floppy boonie hat with hooks, lines, and sinkers tucked around the band—clearly the choice of a seasoned angler. Offers shade from the sun and some rain protection."
