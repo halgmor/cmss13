@@ -759,6 +759,76 @@
 /obj/structure/machinery/computer/crew/interact(mob/living/user)
 	GLOB.crew_monitor[lookup_string].show(user, src)
 
+
+/obj/structure/machinery/computer/fallen_memorial
+	name = "Memorial Terminal"
+	desc = "A solemn terminal listing the names of marines who gave their lives in service."
+	icon_state = "memcomp"
+	density = TRUE
+	use_power = USE_POWER_IDLE
+	idle_power_usage = 250
+	active_power_usage = 500
+	var/faction = FACTION_MARINE
+
+/obj/structure/machinery/computer/fallen_memorial/ui_data(mob/user)
+	var/list/data = list()
+	var/list/fallen = list()
+
+	for(var/mob/living/carbon/human/fallen_marine in GLOB.human_mob_list)
+		if(fallen_marine.faction != faction)
+			continue
+		if(!fallen_marine.is_dead())
+			continue
+		if(issynth(fallen_marine))
+			continue
+
+		var/permadead = FALSE
+		if(!fallen_marine.is_revivable())
+			permadead = TRUE
+		else if(!fallen_marine.check_tod())
+			permadead = TRUE
+
+		if(!permadead)
+			continue
+
+		var/obj/item/card/id/id_card = fallen_marine.get_idcard()
+		var/entry_name = id_card ? id_card.registered_name : fallen_marine.real_name
+		var/entry_rank = id_card ? id_card.assignment : "Unknown"
+
+		fallen += list(list(
+			"name" = entry_name,
+			"rank" = entry_rank,
+		))
+
+	data["fallen"] = fallen
+	data["ship_name"] = MAIN_SHIP_NAME
+	return data
+
+/obj/structure/machinery/computer/fallen_memorial/attack_hand(mob/living/user)
+	if(..())
+		return
+	if(inoperable())
+		return
+	user.set_interaction(src)
+	tgui_interact(user)
+
+/obj/structure/machinery/computer/fallen_memorial/tgui_interact(mob/user, datum/tgui/ui)
+	ui = SStgui.try_update_ui(user, src, ui)
+	if(!ui)
+		ui = new(user, src, "FallenMemorial", name)
+		ui.open()
+
+/obj/structure/machinery/computer/fallen_memorial/update_icon()
+	if(stat & BROKEN)
+		icon_state = "crewb"
+	else
+		if(stat & NOPOWER)
+			icon_state = "crew0"
+			stat |= NOPOWER
+		else
+			icon_state = initial(icon_state)
+			stat &= ~NOPOWER
+
 /obj/structure/machinery/computer/crew/alt
 	icon_state = "cmonitor"
 	density = FALSE
